@@ -21,23 +21,25 @@ Named arguments: [file: "contents.txt"]
 
 ## The making of
 
+#### Create the project
+
 ```bash
 mix new cli
 ```
 
-in the `mix.exs`, add this to the project keyword list
+#### In the `mix.exs`, add this to the project keyword list
 
 ```elixir
 escript: [main_module: Cli.Main],
 ```
 
-build it
+#### Build it
 
 ```bash
 mix escript.build
 ```
 
-run it
+#### Run it
 
 ```bash
 ./cli cat --file contents.txt
