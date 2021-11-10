@@ -18,3 +18,27 @@ mix escript.build
 Unnamed arguments: ["cat"]
 Named arguments: [file: "contents.txt"]
 ```
+
+## The making of
+
+```bash
+mix new cli
+```
+
+in the `mix.exs`, add this to the project keyword list
+
+```elixir
+escript: [main_module: Cli.Main],
+```
+
+build it
+
+```bash
+mix escript.build
+```
+
+run it
+
+```bash
+./cli cat --file contents.txt
+```
