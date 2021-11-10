@@ -1,21 +1,20 @@
 # Cli
 
-**TODO: Add description**
+CLI protype app accepting parameters and then quitting after doing some work
 
-## Installation
+Inspired by [blackode's post](https://medium.com/blackode/writing-the-command-line-application-in-elixir-78a8d1b1850)
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `cli` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:cli, "~> 0.1.0"}
-  ]
-end
+## How to compile
+```bash
+mix escript.build
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/cli](https://hexdocs.pm/cli).
+## How to run
+```bash
+./cli cat --file contents.txt
+```
 
+```
+Unnamed arguments: ["cat"]
+Named arguments: [file: "contents.txt"]
+```
