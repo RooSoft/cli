@@ -1,4 +1,4 @@
-# Cli
+# Cli prototype app
 
 CLI protype app accepting parameters and then quitting after doing some work
 
