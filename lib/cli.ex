@@ -1,4 +1,4 @@
-defmodule Cli.Main do
+defmodule Cli do
   def main(args) do
     options = [switches: [file: :string],aliases: [f: :file]]
     {named,un_named,_}= OptionParser.parse(args, options)

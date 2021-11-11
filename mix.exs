@@ -8,7 +8,7 @@ defmodule Cli.MixProject do
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
 
-      escript: [main_module: Cli.Main],
+      escript: [main_module: Cli],
 
       deps: deps()
     ]
